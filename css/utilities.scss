@@ -36,6 +36,16 @@ $loopCounter: 1;
   $loopCounter: calc($loopCounter + 1);
 }
 
+.section-style {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.secondaryFontFamily {
+  font-family: variables.$secondaryFontFamily;
+}
+
 * {
   box-sizing: border-box;
 }

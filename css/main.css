@@ -1,8 +1,6 @@
+/*HEADER AND HERO*/
 .home-header {
   background-image: url(../images/img/hero.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
   padding-top: 190px;
 }
 
@@ -27,6 +25,10 @@
 
 .search-icon {
   margin-left: 5px;
+}
+
+.scroll-down-label {
+  margin-top: 75px;
 }
 
 .scroll-down-icon {
@@ -62,12 +64,40 @@
   justify-content: center;
 }
 
+/*WHY CHOOSE US*/
+.why-choose-us-section {
+  background-image: url(../images/img/why-choose-us-bg.png);
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.why-us-images-section {
+  display: none;
+}
+
+.primary-btn-custom {
+  min-width: 228px;
+  background-color: #5474fd;
+  font-family: "Aleo";
+  padding: 21px 40px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+}
+
 @media only screen and (min-width: 800px) {
+  /*HEADER AND HERO*/
   .home-header {
-    padding-top: 277px;
+    padding-top: 230px;
   }
   .search-field {
     width: 650px;
+  }
+  .scroll-down-label {
+    margin-top: 108px;
   }
   .collapsed-navbar {
     display: none;
@@ -75,5 +105,24 @@
   .nav-links {
     display: flex;
     gap: 20px;
+  }
+  /*WHY CHOOSE US*/
+  .why-choose-us-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 70px;
+    gap: 50px;
+  }
+  .why-us-images-section {
+    display: flex;
+  }
+  .why-us-image {
+    max-width: 350px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .why-choose-us-section {
+    padding: 0 330px;
   }
 }/*# sourceMappingURL=main.css.map */

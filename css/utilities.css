@@ -37,6 +37,16 @@
   margin-top: 48px;
 }
 
+.section-style {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.secondaryFontFamily {
+  font-family: "Aleo";
+}
+
 * {
   box-sizing: border-box;
 }
