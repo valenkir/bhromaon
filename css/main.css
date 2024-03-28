@@ -1,0 +1,79 @@
+.home-header {
+  background-image: url(../images/img/hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-top: 190px;
+}
+
+.search-field {
+  height: 64px;
+  width: 50%;
+  border: none;
+}
+
+.search-btn {
+  min-width: 120px;
+  background-color: #5474fd;
+  font-family: "Aleo";
+  padding: 18px 10px 14px 20px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  border: 2px solid #ffffff;
+  height: 64px;
+  gap: 10px;
+}
+
+.search-icon {
+  margin-left: 5px;
+}
+
+.scroll-down-icon {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  background-color: #5474fd;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.collapsed-navbar {
+  border: none;
+  background-color: transparent;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-links-active {
+  display: flex;
+  gap: 20px;
+  background-color: #5474fd;
+  position: absolute;
+  bottom: 95px;
+  left: 0;
+  padding: 10px 5px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 800px) {
+  .home-header {
+    padding-top: 277px;
+  }
+  .search-field {
+    width: 650px;
+  }
+  .collapsed-navbar {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */
