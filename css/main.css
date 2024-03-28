@@ -34,6 +34,7 @@
 .scroll-down-icon {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
 }
 
 .navbar {
@@ -88,6 +89,29 @@
   border: none;
 }
 
+/*HOW IT WORKS*/
+.how-it-works-section {
+  background-color: #333333;
+  padding: 30px;
+}
+
+.how-it-works-lines {
+  display: none;
+}
+
+.how-it-works-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.how-it-works-labels {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 1.375rem;
+}
+
 @media only screen and (min-width: 800px) {
   /*HEADER AND HERO*/
   .home-header {
@@ -98,6 +122,11 @@
   }
   .scroll-down-label {
     margin-top: 108px;
+  }
+  .scroll-down-icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
   }
   .collapsed-navbar {
     display: none;
@@ -119,6 +148,20 @@
   }
   .why-us-image {
     max-width: 350px;
+  }
+  /*HOW IT WORKS*/
+  .how-it-works-section {
+    padding: 100px 20px 100px;
+  }
+  .how-it-works-labels {
+    font-size: 2.25rem;
+  }
+  .how-it-works-lines {
+    display: block;
+    bottom: 62%;
+    left: 20%;
+    width: 60%;
+    z-index: 0;
   }
 }
 @media only screen and (min-width: 1500px) {
