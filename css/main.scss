@@ -118,17 +118,31 @@
   font-size: 1.375rem;
 }
 
-/*FIRST PLACE SPAIN*/
+/*FIRST & SECOND PLACE SPAIN*/
 .first-place-section {
   background-image: url(../images/img/madrid-bg-1.png);
-  padding: 150px 50px 50px;
 }
 
-.first-place-wrapper {
-  margin: 0 auto;
+.second-place-section {
+  background-image: url(../images/img/madrid-bg-2.png);
+}
+
+.place-wrapper {
   padding: 50px 32px;
   background-color: color.adjust(variables.$secondaryBgColor, $alpha: -0.1);
   max-width: 540px;
+  height: max-content;
+}
+
+@media only screen and (min-width: 650px) {
+  /*FIRST & SECOND PLACE SPAIN*/
+  .first-place-section {
+    padding-left: 50px;
+  }
+
+  .second-place-section {
+    padding-right: 50px;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -196,14 +210,13 @@
     z-index: 0;
   }
 
-  /*FIRST PLACE SPAIN*/
+  /*FIRST & SECOND PLACE SPAIN*/
   .first-place-section {
-    padding-left: 100px;
-    padding-top: 220px;
+    padding-left: 150px;
   }
 
-  .first-place-wrapper {
-    margin: 0;
+  .second-place-section {
+    padding-right: 150px;
   }
 }
 
@@ -212,7 +225,20 @@
     padding: 0 330px;
   }
 
+  .how-it-works-section {
+    padding-top: 170px;
+  }
+
+  .how-it-works-lines {
+    bottom: 55%;
+  }
+
+  /*FIRST & SECOND PLACE SPAIN*/
   .first-place-section {
     padding-left: 300px;
+  }
+
+  .second-place-section {
+    padding-right: 300px;
   }
 }
