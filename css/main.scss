@@ -138,7 +138,7 @@
   height: max-content;
 }
 
-/*TESTIMONY*/
+/*TESTIMONIAL*/
 .testimony-section {
   background-image: url(../images/img/testimonial.png);
   padding: 100px 20px 0 20px;
@@ -156,6 +156,13 @@
   padding: 20px;
   background-color: variables.$secondaryBgColor;
   max-width: 670px;
+}
+
+/*FOOTER*/
+.home-footer {
+  background-color: variables.$secondaryBgColor;
+  padding-top: 120px;
+  padding-bottom: 50px;
 }
 
 @media only screen and (min-width: 650px) {
