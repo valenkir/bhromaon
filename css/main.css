@@ -1,3 +1,9 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 25 version
+*/
 /*HEADER AND HERO*/
 .home-header {
   background-image: url(../images/img/hero.png);
@@ -222,6 +228,14 @@
     grid-template-rows: 1fr;
     padding: 0 70px;
     gap: 50px;
+  }
+  .why-choose-us-section > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .why-choose-us-section > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
   }
   .why-us-images-section {
     display: flex;
