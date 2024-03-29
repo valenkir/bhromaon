@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 25 version
+*/
+
 @use "./variables.scss";
 @use "sass:color";
 
@@ -9,7 +16,11 @@
   color: variables.$primaryTextColor;
   outline: none;
   border: none;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
   transition-duration: 500ms;
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
   transition-property: background-color;
   &:hover,
   &:active {
@@ -57,10 +68,18 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
+  -webkit-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
   transition-duration: 500ms;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  -o-transition-property: transform;
   transition-property: transform;
+  transition-property: transform, -webkit-transform;
   &:hover {
     cursor: pointer;
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
@@ -81,6 +100,9 @@
 }
 
 .nav-links-active {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
   background-color: variables.$primaryBgColor;
@@ -89,7 +111,13 @@
   left: 0;
   padding: 10px 5px;
   width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -98,9 +126,17 @@
 .why-choose-us-section {
   background-image: url(../images/img/why-choose-us-bg.png);
   padding: 0 15px;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 100%;
   grid-template-columns: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -125,13 +161,26 @@
 }
 
 .how-it-works-icons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
 .how-it-works-labels {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   text-align: center;
   font-size: 1.375rem;
@@ -150,6 +199,8 @@
   padding: 50px 32px;
   background-color: color.adjust(variables.$secondaryBgColor, $alpha: -0.1);
   max-width: 540px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
 }
 
@@ -222,6 +273,9 @@
   }
 
   .nav-links {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     gap: 20px;
   }
@@ -229,14 +283,30 @@
   /*WHY CHOOSE US*/
 
   .why-choose-us-section {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 50px 1fr;
     grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
     padding: 0 70px;
     gap: 50px;
   }
 
+  .why-choose-us-section > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .why-choose-us-section > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+
   .why-us-images-section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -285,10 +355,18 @@
     height: 284px;
   }
   .footer-social-icon {
+    -webkit-transition-duration: 1000ms;
+    -o-transition-duration: 1000ms;
     transition-duration: 1000ms;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
     transition-property: transform;
+    transition-property: transform, -webkit-transform;
     &:hover,
     &:active {
+      -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
       transform: scale(1.5);
       cursor: pointer;
     }
