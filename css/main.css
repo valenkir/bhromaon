@@ -22,9 +22,14 @@
   color: #ffffff;
   outline: none;
   border: none;
+  transition-duration: 500ms;
+  transition-property: background-color;
   border: 2px solid #ffffff;
   height: 64px;
   gap: 10px;
+}
+.search-btn:hover, .search-btn:active {
+  background-color: #3157fd;
 }
 
 .search-icon {
@@ -34,11 +39,20 @@
 .scroll-down-label {
   margin-top: 75px;
 }
+.scroll-down-label:hover {
+  cursor: pointer;
+}
 
 .scroll-down-icon {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
+  transition-duration: 500ms;
+  transition-property: transform;
+}
+.scroll-down-icon:hover {
+  cursor: pointer;
+  transform: rotate(360deg);
 }
 
 .navbar {
@@ -91,6 +105,11 @@
   color: #ffffff;
   outline: none;
   border: none;
+  transition-duration: 500ms;
+  transition-property: background-color;
+}
+.primary-btn-custom:hover, .primary-btn-custom:active {
+  background-color: #3157fd;
 }
 
 /*HOW IT WORKS*/
@@ -242,6 +261,14 @@
   }
   .testimonial-description-wrapper {
     height: 284px;
+  }
+  .footer-social-icon {
+    transition-duration: 1000ms;
+    transition-property: transform;
+  }
+  .footer-social-icon:hover, .footer-social-icon:active {
+    transform: scale(1.5);
+    cursor: pointer;
   }
 }
 @media only screen and (min-width: 1500px) {

@@ -53,5 +53,10 @@ $loopCounter: 1;
 body {
   font-family: variables.$primaryFontFamily, sans-serif;
   font-weight: 400;
-  color: #ffffff;
+  color: variables.$primaryTextColor;
+}
+
+a {
+  text-decoration: none;
+  color: variables.$primaryTextColor;
 }

@@ -6,9 +6,15 @@
   background-color: variables.$primaryBgColor;
   font-family: variables.$secondaryFontFamily;
   padding: $padding;
-  color: #ffffff;
+  color: variables.$primaryTextColor;
   outline: none;
   border: none;
+  transition-duration: 500ms;
+  transition-property: background-color;
+  &:hover,
+  &:active {
+    background-color: color.adjust(variables.$primaryBgColor, $lightness: -7%);
+  }
 }
 
 /*HEADER AND HERO*/
@@ -31,7 +37,7 @@
 .search-btn {
   $padding: 18px 10px 14px 20px;
   @include primaryBtn(120px, $padding);
-  border: 2px solid #ffffff;
+  border: 2px solid variables.$primaryTextColor;
   height: 64px;
   gap: 10px;
 }
@@ -42,12 +48,21 @@
 
 .scroll-down-label {
   margin-top: 75px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .scroll-down-icon {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
+  transition-duration: 500ms;
+  transition-property: transform;
+  &:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+  }
 }
 
 .navbar {
@@ -187,6 +202,7 @@
   .home-header {
     padding-top: 230px;
   }
+
   .search-field {
     width: 650px;
   }
@@ -267,6 +283,15 @@
   }
   .testimonial-description-wrapper {
     height: 284px;
+  }
+  .footer-social-icon {
+    transition-duration: 1000ms;
+    transition-property: transform;
+    &:hover,
+    &:active {
+      transform: scale(1.5);
+      cursor: pointer;
+    }
   }
 }
 

@@ -55,4 +55,9 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
 }/*# sourceMappingURL=utilities.css.map */
