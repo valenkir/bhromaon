@@ -18,6 +18,13 @@
   height: 64px;
   width: 50%;
   border: none;
+  padding-left: 15px;
+}
+.search-field::-moz-placeholder {
+  color: transparent;
+}
+.search-field::placeholder {
+  color: transparent;
 }
 
 .search-btn {
@@ -186,6 +193,24 @@
 }
 
 @media only screen and (min-width: 650px) {
+  .search-field::-moz-placeholder {
+    text-align: center;
+    color: #999999;
+    letter-spacing: 5px;
+    font-size: 14px;
+  }
+  .search-field::placeholder {
+    text-align: center;
+    color: #999999;
+    letter-spacing: 5px;
+    font-size: 14px;
+  }
+  .search-field:focus::-moz-placeholder {
+    color: transparent;
+  }
+  .search-field:focus::placeholder {
+    color: transparent;
+  }
   /*FIRST & SECOND PLACE SPAIN*/
   .first-place-section {
     padding-left: 50px;
